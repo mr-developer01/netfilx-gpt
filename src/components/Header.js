@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./images/flixLogo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="w-full h-[10vh] px-[15vw] bg-gradient-to-b from-black flex items-center justify-between">
+    <div className="w-full h-[9vh] px-[15vw] bg-gradient-to-b from-black flex items-center justify-between">
       <img className="w-[9vw]" src={logo} alt="logo" />
       <div className="flex items-center gap-[1vw] ">
         <div className=" w-[6vw] py-[4px] px-[4px] text-[1vw] rounded text-white border border-white">
@@ -19,9 +20,11 @@ const Header = () => {
             </option>
           </select>
         </div>
-        <button className="bg-[#C51018] w-[4vw] h-[4vh] px-[.5vw] py-[4px] text-[.8vw] font-medium text-white rounded">
-          Sign In
-        </button>
+        <Link to="/login">
+          <button className="bg-[#C51018] w-[4vw] h-[4vh] px-[.5vw] py-[4px] text-[.8vw] font-medium text-white rounded">
+            Sign In
+          </button>
+        </Link>
       </div>
     </div>
   );

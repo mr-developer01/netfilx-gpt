@@ -1,8 +1,10 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ bgC }) => {
   return (
-    <div className="w-full py-20 bg-black flex flex-col items-center gap-4">
+    <div
+      className={`w-full py-20 bg-${bgC} flex flex-col items-center gap-4`}
+    >
       <p className="text-white w-[60%]">
         Questions? Call{" "}
         <span className="underline underline-offset-1">+91 8709706893</span>

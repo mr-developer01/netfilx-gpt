@@ -16,7 +16,7 @@ const Login = () => {
         className="bg-cover bg-center w-full h-[70vh] relative"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="absolute w-[100%] h-[100%] bg-black/60 border-b-[10px] border-[#232323] flex flex-col items-center justify-center ">
+        <div className="absolute w-[100%] h-[100%] bg-black/60 border-b-[10px] border-[#232323] flex flex-col items-center justify-center pointer-events-none ">
           <h1 className="text-[2.5vw] font-black text-white ">
             Unlimited movies, TV shows and more
           </h1>
@@ -27,7 +27,7 @@ const Login = () => {
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
-          <div className=" mt-[15px] ">
+          <div className=" mt-[15px] pointer-events-auto ">
             <InpBtn />
           </div>
         </div>
@@ -38,7 +38,7 @@ const Login = () => {
       <TvShow2 />
       <LogInDownload2 />
       <FAQ />
-      <Footer />
+      <Footer bgC="black" />
     </div>
   );
 };

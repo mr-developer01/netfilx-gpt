@@ -78,6 +78,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Features
 -Login/Signup page
     - Sign in / Sign up form
+        -Header Js
     - When sign up or sign in redirected to Browse Page
 - Browse Page (After Authentication)
     - Header
